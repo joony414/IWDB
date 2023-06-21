@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr">
+  <head>
+    <!-- 메타 태그 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="image/og_iwdb_logo.png" />
+
+    <!-- 파비콘 관련 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- 폰트 관련 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- 공통 스타일시트 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- 본 페이지 스타일시트 -->
+    <link rel="stylesheet" href="css/mypage.css" />
+
+    <!-- 페이지 타이틀 -->
+    <title>회원정보</title>
+  </head>
+
+  <!-- Dark Mode 전환 시, body 태그에 class="dark-mode" 추가됨 -->
+  <body>
+    <!-- 고정된 Top bar 파트
+         Foundation 프레임워크 사용 1 : https://get.foundation/sites/docs/sticky.html
+        Foundation 프레임워크 사용 2 : https://get.foundation/sites/docs/top-bar.html -->
+    <div data-sticky-container>
+      <div class="top-bar" id="responsive-menu" data-sticky data-options="marginTop:0;" data-off-canvas-sticky>
+        <!-- Top bar 좌측 파트 -->
+        <div class="top-bar-left">
+          <ul class="menu">
+            <!-- 로고 -->
+            <li>
+              <a id="logo" href="./main.html"><img src="./images/IWDB_LOGO.png" /></a>
+            </li>
+            <!-- 로고 글자 -->
+            <li>
+              <p class="white-font">Internet<br />Webtoon<br />Database</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Top bar 우측 파트 -->
+        <div class="top-bar-right">
+          <ul class="menu">
+            <!-- 내 서재 Dropdown Menu 파트
+                 Foundation 프레임워크 사용 : https://get.foundation/sites/docs/dropdown-menu.html -->
+            <a href="./favorite.html" id="my-library-text" class="hide" data-toggle="my-library-dropdown">내 서재</a>
+            <div
+              id="my-library-dropdown"
+              class="dropdown-pane"
+              data-position="bottom"
+              data-alignment="center"
+              data-dropdown
+              data-auto-focus="true"
+              data-hover="true"
+              data-hover-pane="true"
+            >
+              <ul class="no-bullet text-center">
+                <li><a id="favorite-text" href="./favorite.html">즐겨찾기</a></li>
+                <li><a id="history-text" href="./history.html">감상 기록</a></li>
+                <li><a id="bookmark-text" href="./bookmark.html">책갈피</a></li>
+              </ul>
+            </div>
+
+            <!-- 여백 -->
+            <div style="width: 30px"></div>
+
+            <!-- 계정 Dropdown Menu 파트
+                 Foundation 프레임워크 사용 : https://get.foundation/sites/docs/dropdown-menu.html -->
+            <a href="./mypage.html" id="nickname-text" class="hide" data-toggle="nickname-dropdown">홍길동</a>
+            <div
+              id="nickname-dropdown"
+              class="dropdown-pane"
+              data-position="bottom"
+              data-alignment="center"
+              data-dropdown
+              data-auto-focus="true"
+              data-hover="true"
+              data-hover-pane="true"
+            >
+              <ul class="no-bullet text-center">
+                <li><a id="mypage-text" href="./mypage.html">회원정보</a></li>
+                <li><a id="logout-text" href="#0">로그아웃</a></li>
+              </ul>
+            </div>
+
+            <!-- 로그인 파트 -->
+            <a id="login-text" class="top-bar-text font-bold" href="./login.html">로그인</a>
+
+            <!-- 여백 -->
+            <div style="width: 30px"></div>
+
+            <!-- 검색 박스 파트 -->
+            <div id="search-box" class="radius white-bg">
+              <input type="search" placeholder="제목, 작가, 태그 검색" />
+              <button id="search-button" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+
+            <!-- 여백 -->
+            <div style="width: 30px"></div>
+
+            <!-- 다크 모드 스위치 -->
+            <div class="switch" style="transform: translate(0, -7px)">
+              <p style="margin-bottom: 0px">다크 모드</p>
+              <input class="switch-input" id="yes-no" type="checkbox" name="darkModeSwitch" />
+              <label class="switch-paddle" for="yes-no">
+                <span class="show-for-sr">다크 모드?</span>
+                <span class="switch-active" aria-hidden="true"></span>
+                <span class="switch-inactive" aria-hidden="true"></span>
+              </label>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 내 정보가 나타나는 상자 -->
+    <div id="myInfoBox" class="mypageContainer align-center large-12">
+      <!-- 홍길동 님 예시 -->
+      <div id="myNameBox" class="text-center; align-center">
+        <h3 id="userName" style="display: inline; font-weight: bold">홍길동</h3>
+        <h3 style="display: inline">&nbsp;님</h3>
+      </div>
+      
+      <hr style="max-width: none" />
+
+
+      <!-- 개인 정보 테이블 -->
+      <table>
+        <ul>
+          <tr>
+            <!-- "회원 아이디" -->
+            <th class="userLabel">회원 아이디</th>
+            <td>
+              <!-- 회원 아이디 정보 -->
+              <p id="userID" class="userInfoOutput">Gildong123</p>
+            </td>
+          </tr>
+          <tr>
+            <!-- "닉네임" -->
+            <th class="userLabel">닉네임</th>
+            <td>
+              <!-- 닉네임 정보 -->
+              <p id="nickname" class="userInfoOutput">홍길동</p>
+            </td>
+          </tr>
+          <tr>
+            <!-- "이메일" -->
+            <th class="userLabel">이메일</th>
+            <td>
+              <!-- 이메일 정보 -->
+              <p id="email" class="userInfoOutput">HGD123@skku.edu</p>
+            </td>
+          </tr>
+        </ul>
+      </table>
+    </div>
+
+    <div style="min-height: 10vh"></div>
+
+    <!-- footer 파트 -->
+    <div id="footer" class="grid-container full">
+      <div class="grid-x grid-margin-x grid-padding-x black-bg">
+        <!-- 여백 -->
+        <div class="large-12 cell">
+          <p>&nbsp</p>
+        </div>
+        <!-- 고객 센터 -->
+        <div class="large-12 cell small-offset-1">
+          <a id="customer-service-text" href="./cs.html"><p>고객센터</p></a>
+        </div>
+        <!-- 문의 메일 -->
+        <div class="large-12 cell grey-font small-offset-1">
+          <p>johndoe@iwdb.com</p>
+        </div>
+        <!-- 출처 -->
+        <div class="large-12 cell grey-font small-offset-1">
+          <p>썸네일 출처 : <code>comic.naver.com</code> , <code>kakao.webtoon.com</code></p>
+        </div>
+        <!-- 여백 -->
+        <div class="large-12 cell">
+          <p>&nbsp</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- 공통 자바스크립트 -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- 본 페이지 자바스크립트 -->
+  <script src="js/mypage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+:root {
+  --black: #121212;
+  --light-black: #272727;
+  --dark-black: #000000;
+  --white: #ffffff;
+  --yellow: #f6c700;
+  --dark-yellow: #80764a;
+  --grey: #7f7f7f;
+  --light-grey: #cacaca;
+}
+
+/********** 사용 가능한 Class **********/
+.black-bg {
+  background-color: var(--black);
+}
+
+.light-black-bg {
+  background-color: var(--light-black);
+}
+
+.dark-black-bg {
+  background-color: var(--dark-black);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
+
+.yellow-bg {
+  background-color: var(--yellow);
+}
+
+.dark-yellow-bg {
+  background-color: var(--dark-yellow);
+}
+
+.grey-bg {
+  background-color: var(--grey);
+}
+
+.black-font {
+  color: var(--black);
+}
+
+.light-black-font {
+  color: var(--light-black);
+}
+
+.dark-black-font {
+  color: var(--dark-black);
+}
+
+.white-font {
+  color: var(--white);
+}
+
+.yellow-font {
+  color: var(--yellow);
+}
+
+.dark-yellow-font {
+  color: var(--dark-yellow);
+}
+
+.grey-font {
+  color: var(--grey);
+}
+
+.dark-mode {
+  background-color: var(--dark-black);
+  color: var(--white);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.rounded {
+  border-radius: 15% / 50%;
+}
+/***************************************/
+
+/********* Class별 세부 디자인 *********/
+.button,
+.button:focus {
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: var(--dark-yellow);
+}
+
+.top-bar,
+.top-bar ul {
+  background-color: var(--black);
+  flex-wrap: nowrap;
+}
+
+.top-bar-left ul.menu p {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.dropdown-pane,
+.dropdown-pane ul {
+  border: none;
+  background-color: var(--light-black);
+  width: auto;
+  z-index: 900;
+}
+
+.breadcrumbs a {
+  color: var(--grey);
+}
+
+.breadcrumbs a:hover,
+.dark-mode .breadcrumbs a:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.breadcrumbs span + a {
+  pointer-events: none;
+  color: var(--black);
+}
+
+.dark-mode .breadcrumbs span + a {
+  pointer-events: none;
+  color: var(--white);
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  margin: 0 0.75rem;
+  opacity: 1;
+  content: "•";
+  color: var(--grey);
+  font-size: 20px;
+}
+
+.pagination a {
+  color: var(--white);
+}
+
+.pagination a:hover {
+  background-color: var(--yellow);
+}
+
+.pagination .current {
+  background-color: var(--yellow);
+}
+
+.text-truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.top-bar {
+  position: relative;
+  z-index: 999;
+}
+
+.orbit-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+input:checked ~ .switch-paddle {
+  background: var(--yellow);
+}
+/***************************************/
+
+/********* ID별 세부 디자인 ************/
+#logo {
+  width: 100px;
+  height: 50px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+#my-library-text,
+#nickname-text,
+#login-text,
+#favorite-text,
+#history-text,
+#bookmark-text,
+#mypage-text,
+#logout-text {
+  color: var(--white);
+  border-bottom: thick solid transparent;
+  font-weight: bold;
+  text-align: center;
+}
+
+#customer-service-text {
+  color: var(--grey);
+  font-weight: bold;
+}
+
+#my-library-text:hover,
+#nickname-text:hover,
+#login-text:hover,
+#favorite-text:hover,
+#history-text:hover,
+#bookmark-text:hover,
+#mypage-text:hover,
+#logout-text:hover,
+#signin-text {
+  color: var(--yellow);
+  border-bottom: thick solid var(--yellow);
+  font-weight: bold;
+  text-align: center;
+}
+
+#customer-service-text:hover {
+  color: var(--yellow);
+  border-bottom: thick solid var(--yellow);
+  font-weight: bold;
+}
+
+
+#search-box {
+  width: 300px;
+  padding: 3px;
+}
+
+#search-button:hover {
+  color: var(--yellow);
+}
+
+#my-library-text 
+{
+  min-width: 84.45px;
+}
+
+#nickname-text {
+  min-width: 80px;
+}
+
+#login-text {
+  min-width: 80px;
+}
+/***************************************/
+
+/******** 태그별 세부 디자인 ***********/
+body {
+  overflow-x: hidden;
+}
+
+body.dark-mode #footer div.white-bg {
+  background-color: var(--dark-black);
+}
+
+body.dark-mode label {
+  background-color: var(--dark-black);
+  color: var(--white);
+}
+
+input[type="search"] {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  max-width: 255px;
+  width: 255px;
+  margin-right: 10px;
+}
+
+input[type="search"]:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  max-width: 255px;
+  width: 255px;
+  margin-right: 10px;
+}
+/***************************************/

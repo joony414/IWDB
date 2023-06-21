@@ -1,0 +1,33 @@
+#nickname-text {
+    color: var(--yellow);
+    border-bottom: thick solid var(--yellow);
+    font-weight: bold;
+}
+
+.userLabel {font-weight:bold; font-size:large;}
+/* 개인정보 출력되는 층 */
+.userInfoOutput {min-width:150px; display:inline-block; color:var(--black); border:1px solid var(--light-grey); border-radius:15px; padding:10px 30px 10px 30px; font-weight:500; margin: 10px 0 10px 0;}
+
+#myInfoBox {border-radius:5px; border:1px solid var(--light-grey); width:40%; margin:10% auto; box-shadow:0px 0px 5px silver;}
+#myNameBox {display:flex; justify-content:center; padding: 10% 0%;}
+
+
+table {width:90%; margin:15px auto; border-radius:10px;}
+tbody {border: none;}
+tbody tr:nth-child(even),tr {border-bottom:1px solid var(--light-grey); border-top: none; border-left: none; border-right: none; background-color: transparent;}
+
+/* 다크 모드 적용 시 */
+body.dark-mode tbody {
+    font: var(--white);
+    background-color: var(--dark-black);
+}
+body.dark-mode .userLabel {font-weight:bold; font-size:large;}
+body.dark-mode .userInfoOutput {min-width:150px; display:inline-block; color:var(--white); border:1px solid var(--light-grey); border-radius:15px; padding:10px 30px 10px 30px; font-weight:500; margin: 10px 0 10px 0;}
+body.dark-mode #myInfoBox {border-radius:5px; border:1px solid var(--light-grey); width:40%; margin:10% auto; box-shadow:0px 0px 5px silver;}
+body.dark-mode #myNameBox {display:flex; justify-content:center; padding: 10% 0%;}
+body.dark-mode table {width:90%; margin:15px auto; border-radius:10px;}
+body.drak-mode tbody {border: none;}
+
+
+
+

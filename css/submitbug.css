@@ -1,0 +1,123 @@
+.bug-report-heading {     /* 까만색 글상자 */
+    width: 350px;
+    background-color: var(--light-grey); 
+    color: black; 
+    text-align: center; 
+    padding: 10px; /* 안쪽 여백을 추가 */
+    margin: 20px 0; 
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#bug-report-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    border: 3px solid var(--light-grey);
+    padding: 30px;
+    margin-bottom: 70px;
+
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3); 
+}
+
+body.dark-mode #bug-report-form {
+    border: 0.7px solid;
+    box-shadow: 5px 10px 5px rgba(255, 255, 255, 0.714);
+}
+
+#form-title {
+    font-weight: 550;
+    margin: 5px;
+    margin-bottom: 25px;
+    font-size: larger;
+
+}
+
+input[type="submit"] {     /* 제출하기 버튼 */
+    width: 30%; 
+    padding: 16px;
+    margin-top: 10px;
+    
+    background-color: rgb(246,199,0);
+    color: black;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(154,125,0);
+}
+
+
+.input-container {      /* 이메일, 주제, 상세설명 div */
+    margin-bottom: 20px;
+    width: 100%;
+    
+ 
+}
+.input-container > div {
+    margin-right: 20px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 17px;             /* 입력 칸 padding */
+    box-sizing: border-box;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+   
+}
+
+.email-input input {
+    flex: 0.5;
+    height: 12px;
+}
+
+#subject {
+    height: 40px; 
+}
+
+#description {
+    height: 200px;
+    min-height: 70px; 
+   
+}
+
+.email-input span {
+    margin: 0 10px;
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+.required {
+    color: red;
+}
+
+
+h5 {
+    text-align: center; 
+    padding: 25px 0; /* 위아래로 충분한 여백을 추가 */
+}
+
+/* <hr> 태그의 스타일을 정의 */
+hr {
+    color: lightgrey; 
+    margin-bottom: 30px; /* 선 아래에 여백 추가 */
+}

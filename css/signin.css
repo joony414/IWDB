@@ -1,0 +1,32 @@
+.group {
+  position: relative;
+}
+
+.group input {
+  padding-right: 90px;
+  width: 100%;
+}
+
+.group button {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0;
+}
+
+button.button.clear {
+  color: var(--black);
+}
+
+button.button.clear:hover {
+  color: var(--yellow);
+}
+
+div.callout.dark-mode {
+  border-color: var(--white);
+}
+
+#signin-text {
+  color: var(--yellow);
+  border-bottom: thick solid var(--yellow);
+}

@@ -1,0 +1,6 @@
+.text {margin:10 auto; text-align:center;}
+/* 카카오 페이지 로그인이 필요한 서비스입니다 */
+#msg {font-weight:bold;}
+
+/* 3초 세는 프로그레스 바 */
+#progress-meter {width:100%; background-color:rgb(246,199,0);}
