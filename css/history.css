@@ -1,0 +1,41 @@
+#my-library-text {
+  color: var(--yellow);
+  border-bottom: thick solid var(--yellow);
+  font-weight: bold;
+}
+
+#episode-cards-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 16px;
+  min-height: 650px;
+}
+
+.button.expanded {
+  width: 1000px;
+  max-width: 1000px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.cell h5 {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+div.large-1.medium-1.small-1.cell.history {
+  position: relative;
+}
+
+div.large-1.medium-1.small-1.cell.history :is(img, i) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: transparent;
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex; 
+    flex-direction: column;  /* 새로운 아이템 추가 시 위에서 아래 순으로 붙음 */
+    align-items: center; 
+}
+
+h2 {
+    margin-top: 100px;       /*  제목(비밀번호 찾기) 위의 상단 마진을 지정  */
+    }
+
+.container {                /* 비밀번호 찾기 폼 */
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px; /* 모서리 둥글게 */
+}
+
+.input-group {
+    display: flex;
+
+}
+
+.input-group label {
+    margin-right: 10px;         /* label 요소의 오른쪽 외부 마진을 설정 */
+}
+
+.input-group input {
+    flex-grow: 1;           /*  이 요소가 flex container의 여분의 공간을 얼마나 차지할 것인지를 정의. */
+                            /*  1 : 모든 남은 공간을 차지하도록 설정. */
+}
+
+input[type="text"], input[type="email"], input[type="submit"] {  /* 입력창, '비밀번호 찾기' 버튼 */
+
+    padding: 6px 12px;              /* input 요소 내부의 여백 : 위아래로 6픽셀, 좌우로 12픽셀 */
+    border: 1px solid #ccc;       /* 요소의 테두리 스타일 : 1픽셀의 실선, 색상은 #ccc(회색) */
+    border-radius: 50px;            
+
+}
+
+input[type="submit"] {  /* '비밀번호 찾기' 버튼 */
+    width: 60%;                     /*  부모 요소의 너비의 50%  */
+    background-color: rgb(246,199,0); 
+    color: black;                 /*  텍스트 색상  */
+    cursor: pointer;               /* 요소 위에 마우스 커서가 있을 때 커서 스타일 : pointer로 설정 */
+    margin-top: 14px;
+    font-weight: bold;
+    line-height: 1.75;              /* 버튼 굵게 */
+}
+
+
+input[type="submit"]:hover {        /*  '비밀번호 찾기' 버튼 위에 마우스 커서가 있을 때 어두운 노란색  */
+    background-color: rgb(224, 184, 3);
+}
+
+.submit-row {                       
+    text-align: center;             /* '비밀번호 찾기' 버튼을 가운데 정렬 */
+}
+
+.submit-row td {                    
+    width: 100%;                    /* 부모 요소(tr)의 너비와 같게 설정 */
+}
+
+
+table {
+    width: 100%;                    /* div의 너비와 같게 설정 */
+    border-collapse: separate;      /* 테이블 테두리를 분리하여 셀 사이의 공간(border-spacing)을 설정할 수 있게 함. */
+    border-spacing: 0 0.7rem;         /* 테이블 셀 사이의 수평(0)과 수직(1rem) 간격을 설정. table 안의 줄간격을 넓게 함. */
+}
+
+.tiny-text {               
+    font-size: 12px;
+    line-height: 1.5;              /*  줄 높이를 글자 크기의 1.5배로 설정 */
+    text-align: center;
+    color: #ccc;            
+}
+.link{
+    color: black; 
+}
+.link:hover{
+    color:rgb(224, 184, 3);
+}

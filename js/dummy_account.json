@@ -1,0 +1,79 @@
+dAccounts = [
+  {
+    "id": "myeongnyun",
+    "password": "qwer1234",
+    "name": "명륜이",
+    "nickname": "인문사회최고",
+    "email": "myeongnyun@naver.com",
+    "favorite": [807831, 602910],
+    "history": ["https://comic.naver.com/webtoon/detail?titleId=790713&no=123", "https://comic.naver.com/webtoon/detail?titleId=790713&no=122"],
+    "bookmark": ["https://comic.naver.com/webtoon/detail?titleId=790713&no=123", "https://comic.naver.com/webtoon/detail?titleId=790713&no=122"]
+  },
+  {
+    "id": "yuljeon",
+    "password": "q1w2e3r4",
+    "name": "율전이",
+    "nickname": "북수원삼성전문공업대생",
+    "email": "yuljeon@gmail.com",
+    "favorite": [1781, 818, 2888, 783053, 702608, 790713, 795643, 570506],
+    "history": [
+      "https://comic.naver.com/webtoon/detail?titleId=790713&no=123",
+      "https://comic.naver.com/webtoon/detail?titleId=790713&no=122",
+      "1781-146화 손만 잡는 사이",
+      "1781-165화 내 뽀송이 어디 갔어",
+      "1781-163화 모두의 왕자님",
+      "2981-57화",
+      "2727-76화",
+      "https://comic.naver.com/webtoon/detail?titleId=783053&no=81",
+      "https://comic.naver.com/webtoon/detail?titleId=702608&no=282",
+      "3375-496화",
+      "https://comic.naver.com/webtoon/detail?titleId=602910&no=440",
+      "https://comic.naver.com/webtoon/detail?titleId=702608&no=284",
+      "https://comic.naver.com/webtoon/detail?titleId=702608&no=265",
+      "https://comic.naver.com/webtoon/detail?titleId=783053&no=83",
+      "https://comic.naver.com/webtoon/detail?titleId=790713&no=130"
+    ],
+    "bookmark": [
+      "https://comic.naver.com/webtoon/detail?titleId=790713&no=123",
+      "https://comic.naver.com/webtoon/detail?titleId=790713&no=122",
+      "1781-164화 교정 당해 주세요!",
+      "1781-165화 내 뽀송이 어디 갔어",
+      "1781-163화 모두의 왕자님",
+      "https://comic.naver.com/webtoon/detail?titleId=702608&no=283",
+      "https://comic.naver.com/webtoon/detail?titleId=702608&no=282",
+      "https://comic.naver.com/webtoon/detail?titleId=602910&no=440",
+      "https://comic.naver.com/webtoon/detail?titleId=602910&no=439"
+    ]
+  },
+  {
+    "id": "joony414",
+    "password": "a",
+    "name": "조준",
+    "nickname": "발사",
+    "email": "joony414@g.skku.edu",
+    "favorite": [807831, 602910, 654774, 784248, 796152, 783053, 738487, 2868, 2442, 2998],
+    "history": [
+      "https://comic.naver.com/webtoon/detail?titleId=783053&no=83",
+      "https://comic.naver.com/webtoon/detail?titleId=730656&no=170",
+      "https://comic.naver.com/webtoon/detail?titleId=730656&no=168",
+      "https://comic.naver.com/webtoon/detail?titleId=801711&no=28",
+      "https://comic.naver.com/webtoon/detail?titleId=801711&no=27",
+      "https://comic.naver.com/webtoon/detail?titleId=801711&no=24",
+      "https://comic.naver.com/webtoon/detail?titleId=801711&no=22",
+      "1047-천둥의 귀인들 30화",
+      "2943-24화",
+      "https://comic.naver.com/webtoon/detail?titleId=793283&no=120"
+    ],
+    "bookmark": [
+      "https://comic.naver.com/webtoon/detail?titleId=602910&no=442",
+      "2998-54화",
+      "2998-52화",
+      "2998-51화",
+      "https://comic.naver.com/webtoon/detail?titleId=807831&no=3",
+      "https://comic.naver.com/webtoon/detail?titleId=783053&no=78",
+      "https://comic.naver.com/webtoon/detail?titleId=783053&no=77",
+      "https://comic.naver.com/webtoon/detail?titleId=783053&no=74",
+      "https://comic.naver.com/webtoon/detail?titleId=801711&no=28"
+    ]
+  }
+]

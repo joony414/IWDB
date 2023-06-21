@@ -1,0 +1,43 @@
+.faq-heading {     /* 까만색 글상자 */
+    width: 350px;
+    background-color: rgb(18,18,18); 
+    color: white; 
+    text-align: center; 
+    padding: 10px; /* 안쪽 여백을 추가 */
+    margin: 20px 0; 
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* <hr> 태그의 스타일을 정의 */
+hr {
+    color: lightgrey; 
+    margin-bottom: 30px; /* 선 아래에 여백 추가 */
+}
+
+.image-with-text {   /* div */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.link{      /* 문의 및 버그신고로 연결 */
+    color: black; 
+    font-size: 14px;
+    margin-top: 8px;
+}
+.link:hover{
+    color:rgb(224, 184, 3);
+    text-decoration: underline;
+}
+
+body.dark-mode .accordion :is(li, a, .accordion-content) {
+    background-color: var(--dark-black);
+    color: var(--white);
+}
+
+body.dark-mode .accordion :is(li:hover, a:hover) {
+    background-color: #e6e6e6;
+    color: #1568a0;
+}

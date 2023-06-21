@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex; 
+    flex-direction: column;  /* 새로운 아이템 추가 시 위에서 아래 순으로 붙음 */
+    align-items: center; 
+}
+
+.findid-heading {     /* 까만색 글상자 */
+    width: 250px;
+    background-color: white; 
+    color: black; 
+    text-align: center; 
+    padding: 10px; /* 안쪽 여백을 추가 */
+    margin: 20px 0; 
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: large;
+    
+    margin-top: 40px;       /*  제목(아이디 찾기) 위의 상단 마진을 지정  */
+    border-radius: 15px;
+}
+
+body.dark-mode .findid-heading {
+    background-color: var(--light-black);
+    color: var(--white);
+}
+
+body.dark-mode .container{
+    background-color: var(--light-black);
+    
+  } 
+  
+body.dark-mode tr{
+    background-color: var(--light-black);
+}
+
+body.dark-mode td{
+    background-color: var(--light-black);
+}
+body.dark-mode th{
+    background-color: var(--light-black);
+}
+body.dark-mode label{
+    background-color: var(--light-black);
+}
+
+.container {                /* 아이디 찾기 폼 */
+    width: 370px;
+    padding: 16px;
+    background-color: white;
+    margin-top: 6px;
+    border: none;
+    border-radius: 15px; /* 모서리 둥글게 */
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 0px;
+
+}
+
+.input-group label {
+    margin-right: 3px;         /* label 요소의 오른쪽 외부 마진을 설정 */
+    font-weight: bold;
+    white-space: nowrap; /* 텍스트 줄바꿈을 방지하여 한 줄로 표시 */
+}
+
+.input-group input {
+    flex-grow: 1;           /*  이 요소가 flex container의 여분의 공간을 얼마나 차지할 것인지를 정의. */
+                            /*  1 : 모든 남은 공간을 차지하도록 설정. */
+}
+
+input[type="text"], input[type="email"] {  /* 입력창 */
+
+    padding: 6px 20px;  /* input 요소 내부의 여백 : 위아래로 6픽셀, 좌우로 12픽셀 */
+    border: 1px solid #ccc;       /* 요소의 테두리 스타일 : 1픽셀의 실선, 색상은 #ccc(회색) */
+    border-radius: 50px;   
+    margin-bottom: 0px;    
+    
+}
+
+
+
+input[type="submit"] {  /* '아이디 찾기' 버튼 */
+    width: 50%;                     /*  부모 요소의 너비의 50%  */
+    background-color: rgb(246,199,0); 
+    color: black;                 /*  텍스트 색상  */
+    cursor: pointer;               /* 요소 위에 마우스 커서가 있을 때 커서 스타일 : pointer로 설정 */
+    margin-top: 8px;
+    font-weight: bold;
+    line-height: 1.75;              /* 버튼 굵게 */
+    border-color:  rgb(246,199,0);
+    border-radius: 50px;  
+    padding: 6px 12px;  /* input 요소 내부의 여백 : 위아래로 6픽셀, 좌우로 12픽셀 */
+}
+
+
+input[type="submit"]:hover {        /*  '아이디 찾기' 버튼 위에 마우스 커서가 있을 때 어두운 노란색  */
+    background-color: rgb(224, 184, 3);
+}
+
+.submit-row {                       
+    text-align: center;             /* '아이디 찾기' 버튼을 가운데 정렬 */
+}
+
+.submit-row td {                    
+    width: 100%;                    /* 부모 요소(tr)의 너비와 같게 설정 */
+    
+}
+
+
+#my-table {
+    width: 100%;    /* div의 너비와 같게 설정 */   
+    border-collapse: collapse;
+    border: none; /* 테이블 전체의 경계선을 없앰 */
+    margin-bottom: 0px;
+
+}
+
+thead,
+tbody,
+tfoot {
+    border: 0px solid red;
+}
+
+
+th{
+    background-color:white;
+}
+
+td{
+    background-color:white;
+}
+
+.tiny-text {           
+    
+    font-size: 12px;
+    line-height: 1.5;              /*  줄 높이를 글자 크기의 1.5배로 설정 */
+    text-align: center;
+    color: #a5a5a5;            
+}
+.link{
+    color: black; 
+}
+.link:hover{
+    color:rgb(224, 184, 3);
+}
